@@ -1,9 +1,10 @@
 import React from "react"
+import Header from "../components/header"
 
 export default function Layout({ children }) {
   return (
-    <div style={{ margin: `90px auto`, maxWidth: 800, padding: `0 1rem` }}>
-      {children}
+    <div style={{ margin: `90px auto`, width: 1000, padding: `0` }}>
+      <Header>{children}</Header>
     </div>
   )
 }
