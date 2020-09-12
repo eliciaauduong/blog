@@ -1,3 +1,18 @@
-html {
-    background-color: lavenderblush;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+/* font-family: 'Karla', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Karla", sans-serif;
+}
+
+main {
+  max-width: 80%;
+  margin: 50px auto;
+}
+
+footer {
+  text-align: center;
+}

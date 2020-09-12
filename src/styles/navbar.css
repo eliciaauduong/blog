@@ -1,0 +1,18 @@
+header {
+  background-color: #fad0c4;
+}
+
+header li a {
+  float: right;
+  font-size: 12pt;
+  color: black;
+  letter-spacing: 1.5pt;
+  text-decoration: none;
+  margin: 10px 25px;
+  text-transform: uppercase;
+  transition: ease 0.5s;
+}
+
+header li a:hover {
+  color: white;
+}
