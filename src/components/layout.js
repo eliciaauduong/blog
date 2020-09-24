@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import "../styles/navbar.css"
 
 // const ListLink = props => (
@@ -11,6 +11,9 @@ import "../styles/navbar.css"
 export default function Layout({ children }) {
   return (
     <div>
+      <head>
+        <title>Elicia Au Duong</title>
+      </head>
       {/* <header>
         <ul style={{ listStyle: `none`, textAlign: `center` }}>
           <ListLink to="/">Home</ListLink>

@@ -22,7 +22,7 @@ export default function Home() {
             Hi, I'm Elicia!
           </h1>
           <p class="about">
-            Welcome to my website! I'm a second-year Commerce/Computer Science
+            Welcome to my website! I'm a second-year Commerce/ Computer Science
             student @ UNSW. I'm interested in areas such as design, web
             development, data analysis and international business.
           </p>
