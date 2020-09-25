@@ -9,6 +9,7 @@ import {
   faGithub,
   faCodepen,
 } from "@fortawesome/free-brands-svg-icons"
+import Profile from "../../static/elicia-home.jpg"
 
 export default function Home() {
   return (
@@ -29,11 +30,7 @@ export default function Home() {
         </div>
 
         <div class="header-item" id="header-right">
-          <img
-            src={"../../elicia-home.jpg"}
-            alt="Elicia Au Duong"
-            id="home-profile"
-          />
+          <img src={Profile} alt="Elicia Au Duong" id="home-profile" />
         </div>
       </div>
       <div id="projects">
