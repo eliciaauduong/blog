@@ -8,6 +8,7 @@ import {
   faLinkedin,
   faGithub,
   faCodepen,
+  faDev,
 } from "@fortawesome/free-brands-svg-icons"
 import Profile from "../../static/elicia-home.jpg"
 
@@ -198,6 +199,14 @@ export default function Home() {
             class="social-link"
           >
             <FontAwesomeIcon icon={faCodepen} />
+          </a>
+          <a
+            href="https://dev.to/eliciaauduong"
+            target="_blank"
+            rel="noreferrer"
+            class="social-link"
+          >
+            <FontAwesomeIcon icon={faDev} />
           </a>
         </div>
       </div>
