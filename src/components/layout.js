@@ -23,6 +23,17 @@ export default function Layout({ children }) {
           <ListLink to="/contact/">Contact</ListLink>
         </ul>
       </header> */}
+      <header>
+        <a href="/" class="nav-link">
+          Home
+        </a>
+        <a href="/about/" class="nav-link">
+          about
+        </a>
+        <a href="/contact/" class="nav-link">
+          contact
+        </a>
+      </header>
       <main>{children}</main>
       <footer>Copyright © 2020. Elicia Au Duong</footer>
     </div>
