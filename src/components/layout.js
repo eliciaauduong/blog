@@ -1,12 +1,4 @@
 import React from "react"
-// import { Link } from "gatsby"
-import "../styles/navbar.css"
-
-// const ListLink = props => (
-//   <li style={{ display: `inline-block` }}>
-//     <Link to={props.to}>{props.children}</Link>
-//   </li>
-// )
 
 export default function Layout({ children }) {
   return (
@@ -14,19 +6,19 @@ export default function Layout({ children }) {
       <head>
         <title>Elicia Au Duong</title>
       </head>
-      {/* <header>
-        <ul style={{ listStyle: `none`, textAlign: `center` }}>
-          <ListLink to="/">Home</ListLink>
-          <ListLink to="/blog">Blog</ListLink>
-          <ListLink to="/resources">Resources</ListLink>
-          <ListLink to="/about/">About</ListLink>
-          <ListLink to="/contact/">Contact</ListLink>
-        </ul>
-      </header> */}
       <header>
-        <a href="/" class="nav-link">
-          Home
+        <a href="/" id="name">
+          Elicia Au Duong
         </a>
+        <a href="/blog/" class="nav-link">
+          Blog
+        </a>
+        {/* <a href="/shop/" class="nav-link">
+          Shop
+        </a> */}
+        {/* <a href="/resources/" class="nav-link">
+          Resources
+        </a> */}
         <a href="/about/" class="nav-link">
           about
         </a>
