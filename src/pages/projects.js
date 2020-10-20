@@ -11,6 +11,7 @@ export default function Home() {
             <a
               href="https://codepen.io/eliciaauduong/full/zYqmeZg"
               class="project-title"
+              target="_blank"
             >
               <span role="img" aria-label="rocket">
                 🚀
@@ -29,6 +30,7 @@ export default function Home() {
             <a
               href="https://codepen.io/eliciaauduong/full/KKzxrqz"
               class="project-title"
+              target="_blank"
             >
               <span role="img" aria-label="snake">
                 🐍
@@ -47,6 +49,7 @@ export default function Home() {
             <a
               href="https://codepen.io/eliciaauduong/full/QWNMbze"
               class="project-title"
+              target="_blank"
             >
               <span role="img" aria-label="doughnut">
                 🍩
@@ -65,6 +68,7 @@ export default function Home() {
             <a
               href="https://codepen.io/eliciaauduong/full/poywRpw"
               class="project-title"
+              target="_blank"
             >
               <span role="img" aria-label="check mark button">
                 ✅
@@ -83,6 +87,7 @@ export default function Home() {
             <a
               href="https://codepen.io/eliciaauduong/full/gOrgXGW"
               class="project-title"
+              target="_blank"
             >
               <span role="img" aria-label="airplane departure">
                 🛫
@@ -101,6 +106,7 @@ export default function Home() {
             <a
               href="https://eliciaauduong.github.io/digital-garden/"
               class="project-title"
+              target="_blank"
             >
               <span role="img" aria-label="seedling">
                 🌱
