@@ -1,21 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
-/* font-family: 'Karla', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Lora&display=swap");
+/* 
+  font-family: 'Lato', sans-serif;
+  font-family: 'Lora', serif;
+*/
 /*#fad0c4*/
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: "Karla", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
+body {
+  background-color: rgba(255, 154, 158, 0.1);
+}
+
+/*-----------------------------------navbar-----------------------------------*/
 header {
-  background-color: #ffc2c5;
   text-align: right;
   padding: 16px 0;
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.1);
-  position: fixed;
-  width: 100%;
-  top: 0;
 }
 
 a.nav-link {
@@ -28,25 +31,32 @@ a.nav-link {
 
 a.nav-link:hover,
 a#name:hover {
-  color: white;
+  color: rgb(255, 154, 158);
 }
 
 a#name {
   float: left;
   color: black;
-  font-size: 13pt;
+  font-size: 14pt;
   padding: 0px 30px;
   transition: ease 1s;
+  font-family: "Lora", serif;
 }
+/*---------------------------------end navbar---------------------------------*/
 
 main {
-  padding: 150px 20% 100px 20%;
+  padding: 50px 0;
   border-radius: 10px;
+}
+
+h1,
+h2 {
+  font-family: "Lora", serif;
+  font-weight: 300;
 }
 
 h1 {
   padding-bottom: 15px;
-  text-transform: uppercase;
   letter-spacing: 1.5pt;
   text-align: center;
 }
@@ -66,31 +76,53 @@ footer {
   padding-bottom: 10px;
 }
 
-#home-profile {
-  width: 80%;
-  border-radius: 50%;
-}
-
-#header {
-  width: 90%;
+/*---------------------------------home header--------------------------------*/
+#hello {
+  align-items: center;
+  width: 65%;
   margin: 0 auto;
+  height: 85vh;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 1fr 1fr;
 }
 
-#header-left {
-  text-align: center;
-  padding: 5vh 20px;
+#hello-text {
+  margin-bottom: 40px;
 }
 
-#header-right {
-  text-align: center;
-  padding: 5vh 0;
+#title {
+  font-size: 36pt;
+  padding-bottom: 26px;
+  font-family: "Lora", serif;
 }
+
+#subtitle {
+  font-size: 20pt;
+}
+
+button#chat {
+  text-align: center;
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: none;
+  background-color: #ffc2c5;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12pt;
+}
+
+#home-profile {
+  margin: 5% 0;
+  width: 60%;
+  border-radius: 50%;
+  float: right;
+}
+
+/*---------------------------------end home header--------------------------------*/
 
 #projects {
-  width: 90%;
+  width: 60%;
   margin: 50px auto;
 }
 
@@ -111,12 +143,8 @@ footer {
   color: #ff9a9e;
 }
 
-strong {
-  font-size: 16pt;
-}
-
 .project-date {
-  color: #bbb;
+  color: #aaa;
   text-transform: uppercase;
 }
 
@@ -126,34 +154,14 @@ strong {
 }
 
 .social-link {
-  font-size: 24pt;
-  color: #ff9a9e;
+  font-size: 20pt;
+  color: #ffc2c5;
   margin: 0 10px;
   transition: ease 0.5s;
 }
 
 .social-link:hover {
-  color: #d6d5f4;
-}
-
-@media only screen and (max-width: 1200px) {
-  #header {
-    display: block;
-    padding: 20px;
-  }
-  #header-left,
-  #header-right {
-    padding: 0;
-    margin: 0;
-  }
-
-  #header-left {
-    padding-bottom: 20px;
-  }
-  #header-right {
-    width: 60%;
-    margin: 0 auto;
-  }
+  color: #ff9a9e;
 }
 
 .about-desc {
@@ -162,11 +170,19 @@ strong {
 
 #groups {
   text-align: center;
+  background-color: #ff9a9e;
+  margin: 50px 0;
+}
+
+#group-logos {
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .group-logo {
-  width: 20%;
-  margin: 30px 50px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  width: 24%;
+  margin: 30px;
 }

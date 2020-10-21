@@ -1,7 +1,5 @@
 import React from "react"
 import Layout from "../components/layout"
-import Enactus from "../../static/enactus.png"
-import Redback from "../../static/redback.png"
 
 export default function About() {
   return (
@@ -15,11 +13,6 @@ export default function About() {
         I'm interested in areas such as design, web development, data analysis
         and international business.
       </p>
-      <h2>Teams</h2>
-      <div id="groups">
-        <img src={Enactus} alt="Enactus" class="group-logo" />
-        <img src={Redback} alt="Redback" class="group-logo" />
-      </div>
       <p class="about-desc">
         Have any questions? <a href="/contact/">Get in touch</a>!
       </p>
