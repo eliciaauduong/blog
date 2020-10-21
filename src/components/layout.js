@@ -11,14 +11,17 @@ export default function Layout({ children }) {
           Elicia Au Duong
         </a>
         <a href="/blog/" class="nav-link">
-          Blog
+          blog
         </a>
         {/* <a href="/shop/" class="nav-link">
           Shop
         </a> */}
-        {/* <a href="/resources/" class="nav-link">
-          Resources
-        </a> */}
+        <a href="/resources/" class="nav-link">
+          resources
+        </a>
+        <a href="/projects/" class="nav-link">
+          projects
+        </a>
         <a href="/about/" class="nav-link">
           about
         </a>
