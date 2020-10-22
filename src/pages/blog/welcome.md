@@ -1,7 +1,10 @@
 ---
-title: "Sweet Pandas Eating Sweets"
-date: "2017-08-10"
+title: "Welcome to the blog!"
+date: "2020-11-01"
+tags: ["lifestyle"]
 ---
+
+<h2> Hello</h2>
 
 Pandas are really sweet.
 

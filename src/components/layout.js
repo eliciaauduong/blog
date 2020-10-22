@@ -10,9 +10,9 @@ export default function Layout({ children }) {
         <a href="/" id="name">
           Elicia Au Duong
         </a>
-        <a href="/blog/" class="nav-link">
+        {/* <a href="/blog-archive/" class="nav-link">
           blog
-        </a>
+        </a> */}
         {/* <a href="/shop/" class="nav-link">
           Shop
         </a> */}

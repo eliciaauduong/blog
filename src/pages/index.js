@@ -39,8 +39,12 @@ export default function Home({ data }) {
         </div>
       </section>
       <section id="blog-posts">
-        <h1>Latest posts</h1>
-        <div id="posts">
+        <h1>Coming Soon: Blog Posts</h1>
+        <p id="more-blogs">
+          Keep a look out for upcoming content on university life, design,
+          technology, and business!
+        </p>
+        {/* <div id="posts">
           {data.allMarkdownRemark.edges.map(({ node }) => (
             <article key={node.id} class="post">
               <div class="about-post">
@@ -62,11 +66,11 @@ export default function Home({ data }) {
             </article>
           ))}
           <div id="more-blogs">
-            <a href="/blog/">
+            <a href="/blog-archive/">
               <button>Read more →</button>
             </a>
           </div>
-        </div>
+        </div> */}
       </section>
       <section id="groups">
         <div id="group-logos">
@@ -84,7 +88,8 @@ export default function Home({ data }) {
             <h1 id="project-title">Projects</h1>
             <p id="project-desc">
               Outside of my studies, I enjoy designing and creating projects.
-              Here is my most recent project: freeCodeCamp: Personal Portfolio.
+              Here is my most recent project from the freeCodeCamp Responsive
+              Web Design Certification: Personal Portfolio.
             </p>
             <a href="/projects/" id="more-projects">
               <button>View all projects →</button>
@@ -101,10 +106,10 @@ export default function Home({ data }) {
           </div>
         </div>
       </section>
-      <section id="subscribe">
+      {/* <section id="subscribe">
         <h1>Get news about my blogs + projects</h1>
         <p>Subscribe to my newsletter</p>
-      </section>
+      </section> */}
       <section id="socials">
         <h1>Let's stay connected!</h1>
         <div>
