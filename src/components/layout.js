@@ -16,9 +16,9 @@ export default function Layout({ children }) {
         {/* <a href="/shop/" class="nav-link">
           Shop
         </a> */}
-        <a href="/resources/" class="nav-link">
+        {/* <a href="/resources/" class="nav-link">
           resources
-        </a>
+        </a> */}
         <a href="/projects/" class="nav-link">
           projects
         </a>

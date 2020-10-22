@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
+import { Link, graphql } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faTwitter,
@@ -11,146 +12,101 @@ import {
   faDev,
 } from "@fortawesome/free-brands-svg-icons"
 import Profile from "../../static/elicia-home.jpg"
+import Enactus from "../../static/enactus.png"
+import Redback from "../../static/redback.png"
+import Project from "../../static/project.png"
 
-export default function Home() {
+export default function Home({ data }) {
   return (
     <Layout>
-      <div id="header">
-        <div class="header-item" id="header-left">
-          <h1>
-            <span role="img" aria-label="waving hand">
-              👋
-            </span>
-            Hi, I'm Elicia!
-          </h1>
-          <p class="about">
-            Welcome to my website! I'm a second-year Commerce/ Computer Science
-            student @ UNSW. I'm interested in areas such as design, web
-            development, data analysis and international business.
-          </p>
+      <section id="hello">
+        <div class="hello-box">
+          <div id="hello-text">
+            <p id="title">
+              {/* <span role="img" aria-label="waving hand">
+            👋
+          </span> */}
+              Hi, I'm Elicia!
+            </p>
+            <p id="subtitle">university student | content creator</p>
+          </div>
+          <a href="/contact/" class="button-link">
+            <button>Contact Me</button>
+          </a>
         </div>
-
-        <div class="header-item" id="header-right">
+        <div class="hello-box">
           <img src={Profile} alt="Elicia Au Duong" id="home-profile" />
         </div>
-      </div>
-      <div id="projects">
-        <h1>Recent projects</h1>
-        <div class="project-tile">
-          <h2>
+      </section>
+      <section id="blog-posts">
+        <h1>Latest posts</h1>
+        <div id="posts">
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <article key={node.id} class="post">
+              <div class="about-post">
+                <h2>{node.frontmatter.title}</h2>
+                <p class="details">
+                  in{" "}
+                  {node.frontmatter.tags.map(tag => (
+                    <p key={tag + `tag`} class="tag">
+                      {tag}
+                    </p>
+                  ))}{" "}
+                  on {node.frontmatter.date} | {node.timeToRead} minutes
+                </p>
+                <p>{node.excerpt}</p>
+              </div>
+              <Link to={node.fields.slug} class="blog-link">
+                View Post →
+              </Link>
+            </article>
+          ))}
+          <div id="more-blogs">
+            <a href="/blog/">
+              <button>Read more →</button>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="groups">
+        <div id="group-logos">
+          <div>
+            <img src={Enactus} alt="Enactus" class="group-logo" />
+          </div>
+          <div>
+            <img src={Redback} alt="Redback" class="group-logo" />
+          </div>
+        </div>
+      </section>
+      <section id="home-projects">
+        <div id="project-tiles">
+          <div class="project-box">
+            <h1 id="project-title">Projects</h1>
+            <p id="project-desc">
+              Outside of my studies, I enjoy designing and creating projects.
+              Here is my most recent project: freeCodeCamp: Personal Portfolio.
+            </p>
+            <a href="/projects/" id="more-projects">
+              <button>View all projects →</button>
+            </a>
+          </div>
+          <div class="project-box">
             <a
               href="https://codepen.io/eliciaauduong/full/zYqmeZg"
-              class="project-title"
+              target="_blank"
+              rel="noreferrer"
             >
-              <span role="img" aria-label="rocket">
-                🚀
-              </span>{" "}
-              freeCodeCamp: Personal Portfolio
+              <img src={Project} alt="Personal Portfolio" id="project-img" />
             </a>
-          </h2>
-          <p id="project-desc">
-            <span class="project-date">September 21, 2020</span> Project 5/5 for
-            Responsive Web Design Certification from freeCodeCamp: Personal
-            Portfolio showcasing projects I designed and built
-          </p>
+          </div>
         </div>
-        <div class="project-tile">
-          <h2>
-            <a
-              href="https://codepen.io/eliciaauduong/full/KKzxrqz"
-              class="project-title"
-            >
-              <span role="img" aria-label="snake">
-                🐍
-              </span>{" "}
-              freeCodeCamp: Technical Documentation Page
-            </a>
-          </h2>
-          <p id="project-desc">
-            <span class="project-date">September 18, 2020</span> Project 4/5 for
-            Responsive Web Design Certification from freeCodeCamp: Technical
-            Documentation Page for basic Python concepts
-          </p>
-        </div>
-        <div class="project-tile">
-          <h2>
-            <a
-              href="https://codepen.io/eliciaauduong/full/QWNMbze"
-              class="project-title"
-            >
-              <span role="img" aria-label="doughnut">
-                🍩
-              </span>{" "}
-              freeCodeCamp: Product Landing Page
-            </a>
-          </h2>
-          <p id="project-desc">
-            <span class="project-date">August 31, 2020</span> Project 3/5 for
-            Responsive Web Design Certification from freeCodeCamp: Product
-            Landing Page for an imaginary donut subscription service
-          </p>
-        </div>
-        <div class="project-tile">
-          <h2>
-            <a
-              href="https://codepen.io/eliciaauduong/full/poywRpw"
-              class="project-title"
-            >
-              <span role="img" aria-label="check mark button">
-                ✅
-              </span>{" "}
-              freeCodeCamp: Survey Form
-            </a>
-          </h2>
-          <p id="project-desc">
-            <span class="project-date">August 29, 2020</span> Project 2/5 for
-            Responsive Web Design Certification from freeCodeCamp: A Feedback
-            Survey Form for Baymax (inspired by Big Hero 6)
-          </p>
-        </div>
-        <div class="project-tile">
-          <h2>
-            <a
-              href="https://codepen.io/eliciaauduong/full/gOrgXGW"
-              class="project-title"
-            >
-              <span role="img" aria-label="airplane departure">
-                🛫
-              </span>{" "}
-              freeCodeCamp: Tribute Page
-            </a>
-          </h2>
-          <p id="project-desc">
-            <span class="project-date">August 27, 2020</span> Project 1/5 for
-            Responsive Web Design Certification from freeCodeCamp: A Tribute
-            Page for Amelia Earhart
-          </p>
-        </div>
-        <div class="project-tile">
-          <h2>
-            <a
-              href="https://eliciaauduong.github.io/digital-garden/"
-              class="project-title"
-            >
-              <span role="img" aria-label="seedling">
-                🌱
-              </span>{" "}
-              Digital Garden
-            </a>
-          </h2>
-          <p id="project-desc">
-            <span class="project-date">August 7, 2020</span> An ongoing work in
-            progress of all my thoughts and notes
-          </p>
-        </div>
-      </div>
-      <div id="socials">
-        <h1>
-          Let's stay connected!{" "}
-          <span role="img" aria-label="sparkles">
-            ✨
-          </span>
-        </h1>
+      </section>
+      <section id="subscribe">
+        <h1>Get news about my blogs + projects</h1>
+        <p>Subscribe to my newsletter</p>
+      </section>
+      <section id="socials">
+        <h1>Let's stay connected!</h1>
         <div>
           <a
             href="https://twitter.com/eliciaauduong"
@@ -209,7 +165,32 @@ export default function Home() {
             <FontAwesomeIcon icon={faDev} />
           </a>
         </div>
-      </div>
+      </section>
     </Layout>
   )
 }
+
+export const query = graphql`
+  query {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      limit: 3
+    ) {
+      edges {
+        node {
+          id
+          timeToRead
+          frontmatter {
+            title
+            date(formatString: "DD MMMM YYYY")
+            tags
+          }
+          fields {
+            slug
+          }
+          excerpt
+        }
+      }
+    }
+  }
+`
