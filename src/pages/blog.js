@@ -6,28 +6,33 @@ export default function Home({ data }) {
   console.log(data)
   return (
     <Layout>
-      <div>
-        <h1>
-          Amazing Pandas Eating Things
-        </h1>
-        <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div key={node.id}>
-              <Link
-              to={node.fields.slug}
-            >
-            <h3>
-              {node.frontmatter.title}
-            </h3>
-            </Link>
-            <span>
-                — {node.frontmatter.date}
-            </span>
-            <p>{node.excerpt}</p>
-            
+      <main class="sub-page">
+        <h1>Blog Posts</h1>
+        <section>
+          <div id="posts">
+            {data.allMarkdownRemark.edges.map(({ node }) => (
+              <article key={node.id} class="post">
+                <div class="about-post">
+                  <h2>{node.frontmatter.title}</h2>
+                  <p class="details">
+                    in{" "}
+                    {node.frontmatter.tags.map(tag => (
+                      <p key={tag + `tag`} class="tag">
+                        {tag}
+                      </p>
+                    ))}{" "}
+                    on {node.frontmatter.date} | {node.timeToRead} minutes
+                  </p>
+                  <p>{node.excerpt}</p>
+                </div>
+                <Link to={node.fields.slug} class="blog-link">
+                  View Post →
+                </Link>
+              </article>
+            ))}
           </div>
-        ))}
-      </div>
+        </section>
+      </main>
     </Layout>
   )
 }
@@ -35,13 +40,14 @@ export default function Home({ data }) {
 export const query = graphql`
   query {
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      totalCount
       edges {
         node {
           id
+          timeToRead
           frontmatter {
             title
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "DD MMMM YYYY")
+            tags
           }
           fields {
             slug
