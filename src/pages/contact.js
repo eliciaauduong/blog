@@ -16,8 +16,8 @@ export default function Home() {
   return (
     <Layout>
       <main class="sub-page">
+        <h1>Contact</h1>
         <section>
-          <h1>Contact</h1>
           <img src={Contact} alt="desk layout" id="contact-header" />
           <div id="contact-info">
             <p>
