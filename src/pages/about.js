@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import City from "../../static/city.jpg"
 import Qudos from "../../static/qudos.jpg"
@@ -38,9 +39,9 @@ export default function About() {
           </p>
           <p class="about-desc">
             Have any questions?{" "}
-            <a href="/contact/" class="link">
+            <Link to="/contact" class="link">
               Get in touch
-            </a>
+            </Link>
             !
           </p>
         </section>

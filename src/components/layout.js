@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 export default function Layout({ children }) {
   return (
@@ -7,27 +8,27 @@ export default function Layout({ children }) {
         <title>Elicia Au Duong</title>
       </head>
       <header>
-        <a href="/" id="name">
+        <Link to="/" id="name">
           Elicia Au Duong
-        </a>
-        {/* <a href="/blog-archive/" class="nav-link">
+        </Link>
+        {/* <Link to="/blog-archive" class="nav-link">
           blog
-        </a> */}
-        {/* <a href="/shop/" class="nav-link">
+        </Link> */}
+        {/* <Link to="/shop" class="nav-link">
           Shop
-        </a> */}
-        {/* <a href="/resources/" class="nav-link">
+        </Link> */}
+        {/* <Link to="/resources" class="nav-link">
           resources
-        </a> */}
-        <a href="/projects/" class="nav-link">
+        </Link> */}
+        <Link to="/projects" class="nav-link">
           projects
-        </a>
-        <a href="/about/" class="nav-link">
+        </Link>
+        <Link to="/about" class="nav-link">
           about
-        </a>
-        <a href="/contact/" class="nav-link">
+        </Link>
+        <Link to="/contact" class="nav-link">
           contact
-        </a>
+        </Link>
       </header>
       <main>{children}</main>
       <footer>Copyright © 2020. Elicia Au Duong</footer>

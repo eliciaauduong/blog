@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faTwitter,
@@ -22,17 +22,12 @@ export default function Home({ data }) {
       <section id="hello">
         <div class="hello-box">
           <div id="hello-text">
-            <p id="title">
-              {/* <span role="img" aria-label="waving hand">
-            👋
-          </span> */}
-              Hi, I'm Elicia!
-            </p>
+            <p id="title">Hi, I'm Elicia!</p>
             <p id="subtitle">university student | content creator</p>
           </div>
-          <a href="/contact/" class="button-link">
+          <Link to="/contact" class="button-link">
             <button>Contact Me</button>
-          </a>
+          </Link>
         </div>
         <div class="hello-box">
           <img src={Profile} alt="Elicia Au Duong" id="home-profile" />
@@ -90,9 +85,9 @@ export default function Home({ data }) {
             is my most recent project from the freeCodeCamp Responsive Web
             Design Certification: Personal Portfolio.
           </p>
-          <a href="/projects/" id="more-projects">
+          <Link to="/projects" id="more-projects">
             <button>View all projects →</button>
-          </a>
+          </Link>
         </div>
         <div class="project-box">
           <a
