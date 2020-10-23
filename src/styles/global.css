@@ -111,7 +111,7 @@ a#name:hover {
 /*-----------------------------------navbar-----------------------------------*/
 header {
   text-align: right;
-  padding: 16px 0;
+  padding: 16px 20px;
 }
 
 a#name {
@@ -139,6 +139,11 @@ a#name {
   font-size: 36pt;
   padding-bottom: 26px;
   font-family: "Lora", serif;
+}
+
+.button-link {
+  margin: 0;
+  padding: 0;
 }
 
 #subtitle {
@@ -270,11 +275,6 @@ a#name {
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-}
-
-#more-projects {
-  text-align: center;
-  color: var(--black);
 }
 /*--------------------------------end projects--------------------------------*/
 

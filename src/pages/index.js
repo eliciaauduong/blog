@@ -85,7 +85,7 @@ export default function Home({ data }) {
             is my most recent project from the freeCodeCamp Responsive Web
             Design Certification: Personal Portfolio.
           </p>
-          <Link to="/projects" id="more-projects">
+          <Link to="/projects" class="button-link">
             <button>View all projects →</button>
           </Link>
         </div>
