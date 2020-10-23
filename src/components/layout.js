@@ -12,22 +12,22 @@ export default function Layout({ children }) {
           Elicia Au Duong
         </Link>
         {/* <Link to="/blog-archive" class="nav-link">
-          blog
+          BLOG
         </Link> */}
         {/* <Link to="/shop" class="nav-link">
-          Shop
+          SHOP
         </Link> */}
         {/* <Link to="/resources" class="nav-link">
-          resources
+          RESOURCES
         </Link> */}
         <Link to="/projects" class="nav-link">
-          projects
+          PROJECT
         </Link>
         <Link to="/about" class="nav-link">
-          about
+          ABOUT
         </Link>
         <Link to="/contact" class="nav-link">
-          contact
+          CONTACT
         </Link>
       </header>
       <main>{children}</main>

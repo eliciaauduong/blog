@@ -87,32 +87,31 @@ footer {
   padding-bottom: 10px;
 }
 
+a {
+  color: var(--black);
+  font-size: 12pt;
+  padding: 0 30px;
+  transition: ease 0.5s;
+}
+
+a:hover,
+a#name:hover {
+  color: var(--dark-pink);
+}
+
 .link {
   color: var(--dark-pink);
   transition: ease 0.5s;
+  padding: 0;
 }
 
 .link:hover {
   color: var(--medium-pink);
 }
-
 /*-----------------------------------navbar-----------------------------------*/
 header {
   text-align: right;
   padding: 16px 0;
-}
-
-a.nav-link {
-  color: var(--black);
-  font-size: 12pt;
-  padding: 16px 30px;
-  text-transform: uppercase;
-  transition: ease 1s;
-}
-
-a.nav-link:hover,
-a#name:hover {
-  color: var(--dark-pink);
 }
 
 a#name {
@@ -291,6 +290,11 @@ a#name {
 /*-------------------------------end subscribe--------------------------------*/
 
 /*-------------------------------social media---------------------------------*/
+.socials {
+  text-align: center;
+  margin: 30px 50px;
+}
+
 .social-link {
   font-size: 20pt;
   color: var(--medium-pink);
@@ -320,8 +324,7 @@ a#name {
 /*--------------------------------end about-----------------------------------*/
 
 /*---------------------------------contact------------------------------------*/
-#contact-info,
-.socials {
+#contact-info {
   text-align: center;
   margin: 10px 50px;
 }
