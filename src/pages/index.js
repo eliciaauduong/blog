@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faTwitter,
@@ -83,36 +83,34 @@ export default function Home({ data }) {
         </div>
       </section>
       <section id="home-projects">
-        <div id="project-tiles">
-          <div class="project-box">
-            <h1 id="project-title">Projects</h1>
-            <p id="project-desc">
-              Outside of my studies, I enjoy designing and creating projects.
-              Here is my most recent project from the freeCodeCamp Responsive
-              Web Design Certification: Personal Portfolio.
-            </p>
-            <a href="/projects/" id="more-projects">
-              <button>View all projects →</button>
-            </a>
-          </div>
-          <div class="project-box">
-            <a
-              href="https://codepen.io/eliciaauduong/full/zYqmeZg"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src={Project} alt="Personal Portfolio" id="project-img" />
-            </a>
-          </div>
+        <div class="project-box">
+          <h1 id="project-title">Projects</h1>
+          <p id="project-desc">
+            Outside of my studies, I enjoy designing and creating projects. Here
+            is my most recent project from the freeCodeCamp Responsive Web
+            Design Certification: Personal Portfolio.
+          </p>
+          <a href="/projects/" id="more-projects">
+            <button>View all projects →</button>
+          </a>
+        </div>
+        <div class="project-box">
+          <a
+            href="https://codepen.io/eliciaauduong/full/zYqmeZg"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={Project} alt="Personal Portfolio" id="project-img" />
+          </a>
         </div>
       </section>
       {/* <section id="subscribe">
         <h1>Get news about my blogs + projects</h1>
         <p>Subscribe to my newsletter</p>
       </section> */}
-      <section id="socials">
+      <section>
         <h1>Let's stay connected!</h1>
-        <div>
+        <div class="socials">
           <a
             href="https://twitter.com/eliciaauduong"
             target="_blank"

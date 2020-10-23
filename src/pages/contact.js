@@ -34,7 +34,7 @@ export default function Home() {
               !
             </p>
           </div>
-          <div id="socials">
+          <div class="socials">
             <h2>Follow me on social media!</h2>
             <a
               href="https://twitter.com/eliciaauduong"

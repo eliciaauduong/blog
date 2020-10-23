@@ -16,6 +16,12 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: "static/favicon.jpg",
+      },
+    },
     `gatsby-transformer-remark`,
   ],
   pathPrefix: "/blog",

@@ -30,6 +30,13 @@ export default function About() {
             .
           </p>
           <p class="about-desc">
+            This website was made with{" "}
+            <span role="img" aria-label="red heart">
+              ❤️
+            </span>{" "}
+            and {"</>"} using Gatsby.
+          </p>
+          <p class="about-desc">
             Have any questions?{" "}
             <a href="/contact/" class="link">
               Get in touch
