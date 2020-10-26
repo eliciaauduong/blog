@@ -82,8 +82,8 @@ export default function Home({ data }) {
           <h1 id="project-title">Projects</h1>
           <p id="project-desc">
             Outside of my studies, I enjoy designing and creating projects. Here
-            is my most recent project from the freeCodeCamp Responsive Web
-            Design Certification: Personal Portfolio.
+            is my most recent project from a workshop at Microsoft Codess: an
+            Introduction to Power Apps.
           </p>
           <Link to="/projects" class="button-link">
             <button>View all projects →</button>
