@@ -6,6 +6,7 @@ import FCC3 from "../../static/fcc3.png"
 import FCC2 from "../../static/fcc2.png"
 import FCC1 from "../../static/fcc1.png"
 import digital from "../../static/dg.png"
+import PowerApp from "../../static/powerapp.gif"
 
 export default function Home() {
   return (
@@ -13,6 +14,25 @@ export default function Home() {
       <main class="sub-page">
         <h1>Projects</h1>
         <section id="projects">
+          <div class="project-tiles">
+            <div class="project-box">
+              <h2>
+                <span role="img" aria-label="rocket">
+                  👧
+                </span>{" "}
+                Microsoft Codess: Introduction to Power Apps
+              </h2>
+              <p class="project-date">26 October 2020</p>
+              <p id="project-desc">
+                Workshop 1 of Microsoft Codess Australia 2020: Build an app in 1
+                hour. The app allows attendees to browse and read details about
+                the sessions at an event.
+              </p>
+            </div>
+            <div class="project-box" id="power-box">
+              <img src={PowerApp} alt="Personal Portfolio" id="project-gif" />
+            </div>
+          </div>
           <div class="project-tiles">
             <div class="project-box">
               <a
@@ -31,7 +51,7 @@ export default function Home() {
               <p id="project-desc">
                 Project 5/5 for Responsive Web Design Certification from
                 freeCodeCamp: Personal Portfolio showcasing projects I designed
-                and built
+                and built.
               </p>
             </div>
             <div class="project-box">
@@ -40,7 +60,11 @@ export default function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={Project} alt="Personal Portfolio" id="project-img" />
+                <img
+                  src={Project}
+                  alt="Personal Portfolio"
+                  class="project-img"
+                />
               </a>
             </div>
           </div>
@@ -62,7 +86,7 @@ export default function Home() {
               <p id="project-desc">
                 Project 4/5 for Responsive Web Design Certification from
                 freeCodeCamp: Technical Documentation Page for basic Python
-                concepts
+                concepts.
               </p>
             </div>
             <div class="project-box">
@@ -74,7 +98,7 @@ export default function Home() {
                 <img
                   src={FCC4}
                   alt="Technical Documentation Page"
-                  id="project-img"
+                  class="project-img"
                 />
               </a>
             </div>
@@ -97,7 +121,7 @@ export default function Home() {
               <p id="project-desc">
                 Project 3/5 for Responsive Web Design Certification from
                 freeCodeCamp: Product Landing Page for an imaginary donut
-                subscription service
+                subscription service.
               </p>
             </div>
             <div class="project-box">
@@ -106,7 +130,11 @@ export default function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={FCC3} alt="Product Landing Page" id="project-img" />
+                <img
+                  src={FCC3}
+                  alt="Product Landing Page"
+                  class="project-img"
+                />
               </a>
             </div>
           </div>
@@ -128,7 +156,7 @@ export default function Home() {
               <p id="project-desc">
                 Project 2/5 for Responsive Web Design Certification from
                 freeCodeCamp: A Feedback Survey Form for Baymax (inspired by Big
-                Hero 6)
+                Hero 6).
               </p>
             </div>
             <div class="project-box">
@@ -137,7 +165,7 @@ export default function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={FCC2} alt="Survey Form" id="project-img" />
+                <img src={FCC2} alt="Survey Form" class="project-img" />
               </a>
             </div>
           </div>
@@ -158,7 +186,7 @@ export default function Home() {
               <p class="project-date">27 August 2020</p>
               <p id="project-desc">
                 Project 1/5 for Responsive Web Design Certification from
-                freeCodeCamp: A Tribute Page for Amelia Earhart
+                freeCodeCamp: A Tribute Page for Amelia Earhart.
               </p>
             </div>
             <div class="project-box">
@@ -167,7 +195,7 @@ export default function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={FCC1} alt="Tribute Page" id="project-img" />
+                <img src={FCC1} alt="Tribute Page" class="project-img" />
               </a>
             </div>
           </div>
@@ -196,7 +224,7 @@ export default function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={digital} alt="Digital Garden" id="project-img" />
+                <img src={digital} alt="Digital Garden" class="project-img" />
               </a>
             </div>
           </div>

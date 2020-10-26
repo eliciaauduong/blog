@@ -14,7 +14,7 @@ import {
 import Profile from "../../static/elicia-home.jpg"
 import Enactus from "../../static/enactus.png"
 import Redback from "../../static/redback.png"
-import Project from "../../static/project.png"
+import PowerApp from "../../static/powerapp.gif"
 
 export default function Home({ data }) {
   return (
@@ -89,14 +89,8 @@ export default function Home({ data }) {
             <button>View all projects →</button>
           </Link>
         </div>
-        <div class="project-box">
-          <a
-            href="https://codepen.io/eliciaauduong/full/zYqmeZg"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={Project} alt="Personal Portfolio" id="project-img" />
-          </a>
+        <div class="project-box" id="power-box">
+          <img src={PowerApp} alt="Personal Portfolio" id="project-gif" />
         </div>
       </section>
       {/* <section id="subscribe">

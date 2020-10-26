@@ -270,9 +270,21 @@ a#name {
   margin: 0 30px;
 }
 
-#project-img {
+.project-img {
   width: 100%;
   overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+#power-box {
+  text-align: center;
+}
+
+#project-gif {
+  width: 50%;
+  overflow: hidden;
+  margin: 0 auto;
   border-radius: 10px;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
