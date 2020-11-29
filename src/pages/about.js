@@ -14,12 +14,12 @@ export default function About() {
           <p class="about-desc">
             Hi! I'm Elicia, a second-year Commerce/ Computer Science student @
             the University of New South Wales (UNSW), majoring in International
-            Business and Business Economics.
+            Business.
           </p>
           <p class="about-desc">
-            I'm interested in areas such as design, web development, data
-            analysis and international business. Want a sneak peek at my
-            thoughts and notes? Check out{" "}
+            I'm passionate about design, web development, data analysis and
+            international business. Want a sneak peek at my thoughts and notes?
+            Check out{" "}
             <a
               href="https://eliciaauduong.github.io/digital-garden/"
               target="_blank"
