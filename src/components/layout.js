@@ -21,7 +21,7 @@ export default function Layout({ children }) {
           RESOURCES
         </Link> */}
         <Link to="/projects" class="nav-link">
-          PROJECT
+          PROJECTS
         </Link>
         <Link to="/about" class="nav-link">
           ABOUT
