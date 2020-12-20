@@ -47,6 +47,8 @@ a {
   line-height: 16pt;
   letter-spacing: 0.5pt;
   color: var(--black);
+  padding: 0 15px;
+  transition: ease 0.5s;
 }
 
 button {
@@ -74,7 +76,7 @@ main {
 }
 
 section {
-  margin: 120px auto;
+  margin: 80px auto;
 }
 
 .sub-page {
@@ -85,13 +87,6 @@ section {
 footer {
   text-align: center;
   padding-bottom: 10px;
-}
-
-a {
-  color: var(--black);
-  font-size: 12pt;
-  padding: 0 30px;
-  transition: ease 0.5s;
 }
 
 a:hover,
@@ -121,6 +116,10 @@ a#name {
   padding: 0px 30px;
   transition: ease 1s;
   font-family: "Lora", serif;
+}
+
+.nav-link {
+  font-size: 12pt;
 }
 /*---------------------------------end navbar---------------------------------*/
 
@@ -310,7 +309,6 @@ a#name {
 .social-link {
   font-size: 20pt;
   color: var(--medium-pink);
-  margin: 20px 10px;
   transition: ease 0.5s;
 }
 

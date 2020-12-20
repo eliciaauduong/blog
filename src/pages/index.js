@@ -10,6 +10,7 @@ import {
   faGithub,
   faCodepen,
   faDev,
+  faDribbble,
 } from "@fortawesome/free-brands-svg-icons"
 import Profile from "../../static/elicia-home.jpg"
 import Enactus from "../../static/enactus.png"
@@ -109,22 +110,6 @@ export default function Home({ data }) {
             <FontAwesomeIcon icon={faTwitter} />
           </a>
           <a
-            href="https://www.instagram.com/eliciaauduong/"
-            target="_blank"
-            rel="noreferrer"
-            class="social-link"
-          >
-            <FontAwesomeIcon icon={faInstagram} />
-          </a>
-          <a
-            href="https://www.pinterest.com.au/eliciaauduong"
-            target="_blank"
-            rel="noreferrer"
-            class="social-link"
-          >
-            <FontAwesomeIcon icon={faPinterest} />
-          </a>
-          <a
             href="https://www.linkedin.com/in/eliciaauduong/"
             target="_blank"
             rel="noreferrer"
@@ -141,6 +126,14 @@ export default function Home({ data }) {
             <FontAwesomeIcon icon={faGithub} />
           </a>
           <a
+            href="https://dribbble.com/eliciaauduong"
+            target="_blank"
+            rel="noreferrer"
+            class="social-link"
+          >
+            <FontAwesomeIcon icon={faDribbble} />
+          </a>
+          <a
             href="https://codepen.io/eliciaauduong"
             target="_blank"
             rel="noreferrer"
@@ -155,6 +148,22 @@ export default function Home({ data }) {
             class="social-link"
           >
             <FontAwesomeIcon icon={faDev} />
+          </a>
+          <a
+            href="https://www.instagram.com/eliciaauduong/"
+            target="_blank"
+            rel="noreferrer"
+            class="social-link"
+          >
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a
+            href="https://www.pinterest.com.au/eliciaauduong"
+            target="_blank"
+            rel="noreferrer"
+            class="social-link"
+          >
+            <FontAwesomeIcon icon={faPinterest} />
           </a>
         </div>
       </section>
